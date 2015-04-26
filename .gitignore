@@ -12,5 +12,7 @@
 vignettes/*.html
 vignettes/*.pdf
 
+.RDataTmp
+
 data/
 
