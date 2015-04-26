@@ -1,5 +1,6 @@
 library("plyr")
-library(ggplot2)
+library("ggplot2")
+library("ggthemes")
 
 #source("read-data.r")
 
@@ -14,6 +15,7 @@ plot +
   facet_grid(. ~ type) +
   labs(title = "Total emissions from PM2.5 in the Baltimore City (tons) by Point Types") +
   labs(x = "years") + 
-  labs(y = "emmissions from PM2.5 mean (tons)")  
+  labs(y = "emmissions from PM2.5 mean (tons)")  +
+  theme_economist()
   
 # all decreasing !

@@ -1,5 +1,6 @@
 library("plyr")
-library(ggplot2)
+library("ggplot2")
+library("ggthemes")
 
 #source("read-data.r")
 
@@ -16,6 +17,7 @@ plot +
   geom_bar(stat="identity") +
   labs(title = "Total emissions from PM2.5 in the USA from coal combustion-related sources") +
   labs(x = "years") + 
-  labs(y = "emmissions from PM2.5 mean (tons)")  
+  labs(y = "emmissions from PM2.5 mean (tons)")  +
+  theme_hc()
 
 # decreasing (a little) !
